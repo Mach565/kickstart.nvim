@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -155,6 +155,9 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- Attempt to open files with the following file encodings, left to right
+vim.opt.fileencodings = {'ucs-bom','utf-8','sjis','default','latin1'}
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
